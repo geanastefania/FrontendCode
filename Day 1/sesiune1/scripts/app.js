@@ -31,10 +31,10 @@ var employeesList=[
     }
 ];
 function showList(){
-    var myTable= '<table border="1"><tr><th>First Name</th><th>Last Name</th><th>Phone</th><th>Salary</th></tr>';
+    var myTable= '<table border="1"><tr><th>First Name</th><th>Last Name</th><th>Phone</th><th>Salary</th><th></th><th></th></tr>';
     for(var i in employeesList) {
         myTable+=
-            '<tr><td>'+employeesList[1].firstName+'</td><td>'+employeesList[i].lastName+'</td><td>'+employeesList[i].phone+'</td><td>'+employeesList[i].salary+'</td></tr>';
+            '<tr><td>'+employeesList[1].firstName+'</td><td>'+employeesList[i].lastName+'</td><td>'+employeesList[i].phone+'</td><td>'+employeesList[i].salary+'</td><td><button onclick="vizualizare()">vizualizare</button></td><td> stergere</td></tr>';
     }
     myTable+='</table>';
     var container = document.getElementById('listcontainer');

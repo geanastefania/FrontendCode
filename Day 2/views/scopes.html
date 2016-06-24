@@ -1,0 +1,37 @@
+
+<div class="container" ng-controller="ScopeController">
+        <div class="jumbotron">
+            <p>
+                <div class="panel panel-default">
+                <div class="panle-heading">
+                    <h3 class="panel-title">First Exemple</h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        ScopeID; {{$id}}
+                    </p>
+                    <p>
+                        Type something: <input type="text" ng-model="firstVariable"/>
+                    </p>
+                    <p>
+                        Your input: {{firstVariable}}
+                    </p>
+                    <p>
+                        <a class="btn btn-primary btn-lg" role="button" ng-click="resetFirstVariable()">Reset Input</a>
+                    </p>
+                    <p>
+                        <a class="btn btn-primary btn-lg" role="button" ng-click="setFirstvariable('something')">Set Input to Something</a>
+                    </p>
+                </div>
+                </div>
+                 <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Menu</h3>
+                    </div>
+                    <div class="panel-body">
+                    <div ng-include="'views/menu.html'"></div></div>
+
+                    </div>
+            </p>
+    </div>
+</div>
